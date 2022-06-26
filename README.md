@@ -37,9 +37,16 @@ To get started with the installation of the JSON server, if you have not done so
 
 > npm install -g json-server
 
-After you have successfully done this step, you will then need to run the command through the terminal:
+After you have successfully done this step, you will then proceed to run the command through the terminal:
 
 > json server --watch db.json
+
+Now, to open the default file to your browser do the following command:
+
+> _open index.html_ for MAC users and _explorer.exe index.html_ for WSL
+
+The web application will then take you to the website where you can browse our unique and custom-made lighting fixtures.  You can either add them to your favorite list or add them to your cart.  Otherwise, stay up to date by subscribing to our latest events by simply providing us with your email address.
+
 
 
 ## Contributing 
