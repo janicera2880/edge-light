@@ -1,73 +1,78 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Smooch&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&family=Smooch&family=Tiro+Telugu&display=swap');
 * {
-    box-sizing: content-box;
+    box-sizing: border-box;
 }
 
 body {
-    background-image: url("https://res.litfad.com/site/img/item/2020/12/29/1969432/1200x1200.jpg");
-    background-size: contain;
+    background-image: url("https://i.pinimg.com/originals/ce/ef/0d/ceef0d5c1743558ec8b6c6a5430e406c.jpg");
+    background-color: rgba(39, 38, 36, 0.507);
+    background-position:center;
+    background-size:contain;
     background-repeat: no-repeat;
     background-position: center;
-    display: inline-flex;
-    font-family: 'Smooch', cursive;
-    text-shadow: #feab51;
-    margin: 150;
-    min-height: 5vh;
+    display: flex;
+    
+    font-family: "Prata", sans-serif;
+    margin: 0;
+    min-height: 100vh;
 }
-
 aside {
-    background-color: rgb(51, 58, 55);
+    background-color: rgba(39, 38, 36, 0.507);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 2rem;
-    width: 300px;
+    width: 450px;
     height: 100vh;
 }
 
 aside ul {
-    padding: 2;
-    list-style-type: disc;
+    padding: 0;
+    list-style-type: unset;
 }
 
 aside a {
-    color: rgb(67, 201, 123);
-    display: inline-block;
+    color: rgb(34, 56, 53);
+    display:grid;
     font-size: 2rem;
-    text-decoration: none;
+    text-decoration:rgb(55, 160, 160);
     margin: 0.5rem;
 }
 
 .special {
-    background-color: #62e0a5;
-    color: rgb(156, 99, 99);
+    background-color: #5c7756;
+    color: rgb(18, 24, 18);
     display: block;
-    padding: 1rem;
-    text-align: center;
+    padding: 3rem;
+    text-align:center;
 }
 
 main {
-    color: rgb(75, 139, 95);
-    font-size: 2.0rem;
+    color: rgb(15, 13, 13);
+    
+    font-size: 3rem;
     padding: 3rem;
 }
 
 main h1 {
     margin: 0;
-    text-decoration-color: black;
-    text-shadow: #feab51;
 }
 
 main h3 {
     color: #feab51;
     margin: 0;
 }
+.floatRight{
+    float:right;
+    margin-left: 0px;
 
-@media screen and (max-width: 800px) {
+
+}
+@media screen and (max-width: 900px) {
     body {
-        flex-direction: column-reverse;
+        flex-direction: row;
         justify-content: space-between;
     }
 
