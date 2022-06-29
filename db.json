@@ -1,0 +1,200 @@
+{
+    "lights": [
+        {
+            "id": 0,
+            "name": "Firefly Light",
+            "style": "Modern",
+            "color": "Gold",
+            "category": [
+                "Chandelier"
+            ],
+            "material": "Metal",
+            "size": "Large",
+            "shape": "Geometric",
+            "voltage": "110V-120V",
+            "glass_type": {
+                "glass_material": "Clear Glass",
+                "glass_color": "Smoke Gray"
+            },
+            "image": {
+                "chandelier": "https://res.litfad.com/site/img/item/2022/06/25/5050706/1200x1200.jpg"
+                
+            },
+        }
+            
+        {
+            "id": 1,
+            "name": "Hanging Spiral",
+            "style": "Modern",
+            "color": "Black",
+            "category": [
+                "Chandelier"
+            ],
+            "material": "Metal",
+            "size": "Large",
+            "shape": "Geometric",
+            "voltage": "110V-120V",
+            "glass": {
+                "glass_material": "Fiberglass",
+                "glass_color": "White"
+            },
+            "image": {
+                "chandelier": "https://res.litfad.com/site/img/item/2022/06/16/5038694/1200x1200.jpg"
+                
+            },
+
+        }
+
+        {
+            "id": 2,
+            "name": "Pendent Light",
+            "style": "Industrial",
+            "color": "Gold",
+            "category": [
+                "Pendant"
+            ],
+            "material": "Glass",
+            "size": "Large",
+            "shape": "Globe",
+            "voltage": "220V-240V",
+            "glass": {
+                "glass_material": "Glass",
+                "glass_color": "Amber"
+            },
+            "image": {
+                "pendant": "https://res.litfad.com/site/img/item/2022/06/12/5050898/1200x1200.jpg"
+            },
+        }
+        
+        {
+        
+            "id": 3,
+            "name": "Contemporary",
+            "style": "Modern",
+            "color": "Gold",
+            "category": [
+                "Chandelier"
+            ],
+            "material": "Glass",
+            "size": "Large",
+            "shape": "Geometric",
+            "voltage": "220V-240V",
+            "glass": {
+                "glass_material": "Glass",
+                "glass_color": "White"
+            },
+            "image": {
+                "chandelier": "https://res.litfad.com/site/img/item/2022/06/03/5014920/1200x1200.jpg"
+            },
+        }   
+       
+        {
+
+            "id": 4,
+            "name": "Minimalist",
+            "style": "Modern",
+            "color": "Black",
+            "category": [
+                "Pendant"
+            ],
+            "material": "Metal",
+            "size": "Large",
+            "shape": "Hexagon",
+            "voltage": "220V-240V",
+            "glass": {
+                "glass_material": "Acrylic",
+                "glass_color": "White"
+            },
+            "image": {
+                "pendant": "https://res.litfad.com/site/img/item/2022/06/13/5039140/1200x1200.jpg"
+            },
+        }
+
+        {
+           "id": 5,
+            "name": "Novelty",
+            "style": "Modern",
+            "color": "White",
+            "category": [
+                "Pendant"
+            ],
+            "material": "Metal",
+            "size": "Large",
+            "shape": "Gull Shaped",
+            "voltage": "220V-240V",
+            "glass": {
+                "glass_material": "Acrylic",
+                "glass_color": "White"
+            },
+            "image": {
+                "pendant": "https://res.litfad.com/site/img/item/2020/12/11/1971595/1200x1200.jpg"
+            },
+        }
+       
+        {
+            "id": 6,
+            "name": "Simplicity Bar",
+            "style": "Modern",
+            "color": "Black",
+            "category": [
+                "Wall Lights"
+            ],
+            "material": "Acrylic",
+            "size": "Large",
+            "shape": "Geometric",
+            "voltage": "220V-240V",
+            "bulb": {
+                "bulb_base": "SMD",
+                "bulb_type": "LED"
+            },
+            "image": {
+                "wall_light": "https://res.litfad.com/site/img/item/2021/01/19/2064349/1200x1200.jpg"
+            },
+        }
+
+        {
+            "id": 7,
+            "name": "Wall Sconce",
+            "style": "Modern",
+            "color": "Black",
+            "category": [
+                "Wall Lights"
+            ],
+            "material": "Metal",
+            "size": "Medium",
+            "shape": "Sphere",
+            "voltage": "110V-120V",
+            "bulb": {
+                "bulb_base": "SMD",
+                "bulb_type": "LED"
+            },
+            "image": {
+                "wall_light": "https://res.litfad.com/site/img/item/2022/06/03/4980526/1200x1200.jpg"
+            },
+            
+        }
+        
+        {
+            "id": 8,
+            "name": "Crystal Wall",
+            "style": "Modern",
+            "color": "Gold",
+            "category": [
+                "Wall Lights"
+            ],
+            "material": "Glass",
+            "size": "Medium",
+            "shape": "Cylinder",
+            "voltage": "110V-120V",
+            "bulb": {
+                "bulb_base": "E12",
+                "bulb_type": "Fluorescent"
+            },
+            "image": {
+                "wall_light": "https://res.litfad.com/site/img/item/2022/05/26/4601523/1200x1200.jpg"
+            },
+        }
+    
+    ]
+
+}

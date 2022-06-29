@@ -1,6 +1,6 @@
 # Edge Light Inc
 
-![Living Room Lighting](https://res.litfad.com/site/img/item/2020/12/29/1969432/1200x1200.jpg) 
+![Living Room Lighting]("https://res.litfad.com/site/img/item/2020/12/29/1969432/1200x1200.jpg") 
 
 > “Home is the most important place. My passion is to help people create beautiful and meaningful spaces in their home.”- Joana Gaines 
 

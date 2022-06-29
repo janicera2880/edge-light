@@ -64,12 +64,9 @@ main h3 {
     color: #feab51;
     margin: 0;
 }
-.floatRight{
-    float:right;
-    margin-left: 0px;
 
 
-}
+
 @media screen and (max-width: 900px) {
     body {
         flex-direction: row;
