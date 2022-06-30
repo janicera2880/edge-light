@@ -4,90 +4,60 @@
 * {
     box-sizing: border-box;
 }
-
-body {
-    background-image: url("https://i.pinimg.com/originals/ce/ef/0d/ceef0d5c1743558ec8b6c6a5430e406c.jpg");
-    background-color: rgba(39, 38, 36, 0.507);
-    background-position:center;
-    background-size:contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: flex;
-    
-    font-family: "Prata", sans-serif;
-    margin: 0;
-    min-height: 100vh;
+ 
+/*header section-Name of Company */
+.header {
+    background-color: rgb(50, 54, 50);
+    color: rgb(167, 216, 154);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+    padding: 15px;
+    text-align: center;
 }
-aside {
-    background-color: rgba(39, 38, 36, 0.507);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 2rem;
-    width: 450px;
-    height: 100vh;
+ 
+/*navigation menu */
+.nav_menu {
+    overflow: hidden;
+    background-color:cadetblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
-aside ul {
-    padding: 0;
-    list-style-type: unset;
-}
-
-aside a {
-    color: rgb(34, 56, 53);
-    display:grid;
-    font-size: 2rem;
-    text-decoration:rgb(55, 160, 160);
-    margin: 0.5rem;
-}
-
-.special {
-    background-color: #5c7756;
-    color: rgb(18, 24, 18);
+.nav_menu a {
+    float:inline-start;
     display: block;
-    padding: 3rem;
-    text-align:center;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
-
-main {
-    color: rgb(15, 13, 13);
-    
-    font-size: 3rem;
-    padding: 3rem;
+.nav_menu a:hover {
+    background-color: white;
+    color: green;
 }
+ 
 
-main h1 {
-    margin: 0;
+ /* Designing all grid */
+ .grid-container {
+    display: grid;
+    grid-template-columns:auto auto;
+    background-color: rgb(34, 33, 33);
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+    padding: 5px;
 }
-
-main h3 {
-    color: #feab51;
-    margin: 0;
+  
+/* Designing all grid-items */
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid black;
+    padding: 50px;
+    font-size: 50px;
+    text-align: center;
 }
-
-
-
-@media screen and (max-width: 900px) {
-    body {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    main {
-        min-height: 60vh;
-    }
-
-    aside {
-        height: auto;
-        width: 100%;
-    }
-
-    aside ul {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .special {
-        display: none;
-    }
+/* Style for footer section */
+.footer {
+    background-color:cadetblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: medium;
+    padding: 30px;
+    text-align: center;
 }
