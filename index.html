@@ -23,11 +23,16 @@
 </div>
  
 <!-- Navigation Menu- Dropdown Search-Category -->
-<div class = "nav_menu">
-    <a href = "#">CHANDELIERS</a>
-    <a href = "#">PENDANTS</a>
-    <a href = "#">WALL LIGHTS</a>
-</div>
+<div class="navbar">
+ 
+  <div class="dropdown">
+  <button class="dropbtn" onclick="myNav()">BROWSE FROM OUR PRODUCT CATEGORY
+  </button>
+  <div class="dropdown-content" id="myDropdown">
+    <a href="#chandeliers">CHANDELIERS</a>
+    <a href="#pendants">PENDANT LIGHTS</a>
+    <a href="#wall">WALL SCONCE</a>
+  </div>
  
 </div>
 
@@ -77,9 +82,10 @@
    <div class = "footer">
    
     <h5>Our sales associates are trained to provide you with an exceptional experience from start to finish. For questions about an existing order, product availability, pricing information or to place a new order, feel free to email us for any further inquiries.</h5><br>
-    <form method="post" action="mailto:youremail@youremail.com" >
-      <input type="submit" value="SUBMIT YOUR EMAIL HERE" />
-    </form>
+  
+      <button style="font-size: 20px;" id="myBtn">Submit Your Email Here</button>
+  
+  
 </div> 
 </body>
 </html>
