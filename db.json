@@ -47,7 +47,7 @@
 
         {
             "id": 2,
-            "name": "Pendent Light",
+            "name": "Smokey Light",
             "style": "Industrial",
             "color": "Black",
             "category": [
@@ -154,7 +154,7 @@
 
         {
             "id": 7,
-            "name": "Wall Sconce",
+            "name": "Sphere Glam",
             "style": "Modern",
             "color": "Black",
             "category": [
