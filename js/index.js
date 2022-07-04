@@ -8,23 +8,6 @@ function myNav() {
   }
  
   // Close the dropdown if the user clicks outside of it
-  function myNav() {
-    document.getElementById("myDropdown").classList.toggle("show");
-  }
-  
-  
-  
-      fetch('http://localhost:3000/lights')
-      .then(response => response.json())
-      .then(data => {
-        console.log(data);
-        // LOG: (3) [{…}, {…}, {…}]
-      });
-    
-  
-
-
-  // Close the dropdown if the user clicks outside of it
   document.onclick = function(e) {
     if (!e.target.matches('.dropbtn')) {
     let myDropdown = document.getElementById("myDropdown");
@@ -33,13 +16,21 @@ function myNav() {
       }
     }
   }
- 
-  
-  
 
-//Add Event Listener to Email Button and console.log message Your Message Is Sent
-document.getElementById("myBtn").addEventListener("click", myFunction);
+ function getAllLights(){
+  fetch('http://localhost:3000/lights')
+  .then(res => res.json())
+  .then(data => {
+    console.log(data)
+    showAllLightsInfo(data.results);
 
-function myFunction() {
+  })
+ }
+
+//Add Event Listener to Email Button and send alert message Your Message Is Sent
+document.getElementById("myBtn").addEventListener("click", deliverMail);
+
+function deliverMail() {
   alert ("Thank you for your email!");
 }
+

@@ -85,32 +85,38 @@
   .show {
     display:flex;
   }
-
- /* Gallery grid */
- .grid-container {
-    display: grid;
-    grid-template-columns:auto auto auto;
-    background-color: rgb(34, 33, 33);
-    grid-column-gap: 50px;
-    grid-row-gap: 50px;
-    padding: 5px;
+  .name{
+    float:left;
+    margin:100px;
+    border:1px solid black;
 }
+
+/* Gallery grid */
+.grid-container {
+  display: grid;
+  grid-template-columns:auto auto auto;
   
+  background-color: rgb(34, 33, 33);
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+  padding: 5px;
+}
+
 /* Gallery Design */
 .grid-item {
-    background-color: rgba(168, 164, 164, 0.8);
-    border: 1px solid black;
-    padding: 50px;
-    font-size: 50px;
-    text-align: center;
+  background-color: rgba(168, 164, 164, 0.8);
+  border: 1px solid black;
+  padding: 30px;
+  font-size: 30px;
+  text-align: center;
 }
 /* Style for footer section */
 .footer {
-    background-color:rgb(50, 54, 50);
-    color: rgb(223, 235, 233);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: large;
-    padding: 8px;
-    text-align: center;
-    
+  background-color:rgb(50, 54, 50);
+  color: rgb(223, 235, 233);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: large;
+  padding: 8px;
+  text-align: center;
+  
 }
