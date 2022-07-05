@@ -16,6 +16,9 @@ function myNav() {
       }
     }
   }
+  const grid = document.getElementsByClassName('grid-item');
+
+getAllLights(API_URL)
 
  function getAllLights(){
   fetch('http://localhost:3000/lights')
@@ -25,6 +28,15 @@ function myNav() {
     showAllLightsInfo(data.results);
 
   })
+ }
+
+ function showAllLightsInfo(data) {
+  document.querySelector('grid-item').innerHTML = "";
+
+  data.array.forEach(element => {
+    const {name, style, color, category} = lights
+    const lightElement = document.createElement('id')
+  });
  }
 
 //Add Event Listener to Email Button and send alert message Your Message Is Sent
