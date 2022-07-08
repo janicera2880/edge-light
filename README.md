@@ -28,7 +28,7 @@ As a Content Administrator for Oil And Energy company, I have gained knowledge i
 
 ## Installation 
 
-To install this project, simply type this URL to your browser https://github.com/janicera2880/edge-light. Fork and clone by typing in command git clone on your terminal and then copy and paste the SSH code.  Once successful go ahead and change directory with commad cd making sure it's to the correct folder.
+To install this project, simply type this URL to your browser https://github.com/janicera2880/edge-light. Fork and clone by typing in command git clone on your terminal and then copy and paste the SSH code.  Once successful go ahead and change directory with command cd making sure it's to the correct folder.
 
 
 ## Usage 
