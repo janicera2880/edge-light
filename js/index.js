@@ -17,7 +17,7 @@ function myNav() {
     }
   }
   
-
+function showAllLights(data){
  
   fetch('http://localhost:3000/lights')
   .then(res => res.json())
@@ -26,15 +26,23 @@ function myNav() {
    
 
   })
+  data.forEach(obj => {
+    const renderedObj = `
+      <div class="grid-item">
+        <img src=${obj.image} width="300" height="400" />
+      </div>
+    `
+  })
  
-
+}
  
 //Add Event Listener to Email Button and send alert message Your Message Is Sent
-function logEmail(event) {
-  log.textContent = `Email Submitted! Time stamp: ${event.timeStamp}`;
-  event.preventDefault();
-}
+const input = document.querySelector('input');
+const log = document.getElementById('log');
 
-const form = document.getElementById('form');
-form.addEventListener('submit', logEmail);
+input.addEventListener('change', updateValue);
+
+function updateValue(e) {
+  log.textContent = e.target.value;
+}
 
