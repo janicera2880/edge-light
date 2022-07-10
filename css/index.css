@@ -82,34 +82,33 @@
     background-color: rgb(120, 192, 111);
   }
   
-  .show {
-    display:flex;
-  }
-  .name{
-    float:left;
-    margin:100px;
-    border:1px solid black;
-}
-
-/* Gallery grid */
-.grid-container {
-  display: grid;
-  grid-template-columns:auto auto auto;
   
-  background-color: rgb(34, 33, 33);
-  grid-column-gap: 30px;
-  grid-row-gap: 30px;
-  padding: 5px;
-}
+/* Gallery grid */ 
 
-/* Gallery Design */
-.grid-item {
-  background-color: rgba(168, 164, 164, 0.8);
-  border: 1px solid black;
-  padding: 30px;
-  font-size: 30px;
-  text-align: center;
-}
+.grid-container { 
+
+  display: grid; 
+  grid-template-columns:auto auto auto; 
+  background-color: rgb(34, 33, 33); 
+  grid-column-gap: 30px; 
+  grid-row-gap: 30px; 
+  padding: 5px; 
+
+} 
+/* Gallery Design */ 
+
+.grid-item { 
+
+  display: grid; 
+  background-color: rgba(168, 164, 164, 0.8); 
+  border: 1px solid black; 
+  padding: 30px; 
+  font-size: 30px; 
+  text-align: center; 
+
+} 
+
+
 /* Style for footer section */
 .footer {
   background-color:rgb(50, 54, 50);

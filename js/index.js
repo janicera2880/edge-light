@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', (event) => {
+document.addEventListener('DOMContentLoaded', () => {
     console.log('DOM fully loaded and parsed');
 });
 //  Create a function for dropdown menu using get elements by ID
@@ -19,30 +19,34 @@ function myNav() {
   
 function renderedObject(light){
 //Build Gallery of Lights
-let gallery = document.createElement('item')
-gallery.className = 'grid-item'
+let gallery = document.createElement('grid-item')
+gallery.className = 'grid-container'
 gallery.innerHTML = 
-`<img src=${light.imageUrl} width="300" height="400"/>
+`<img src=${light.image} width="300" height="400"/>
 <div class="content">
-<h4>${light.name}</h4>
+<h5>${light.name}</h5>
 </div>`
+
 //Add Gallery to the DOM
 document.querySelector('#light-list').appendChild(gallery)
+}
+//Fetch Request- Get Fetch for All Lights
+function getAllLights(){
 fetch('http://localhost:3000/lights')
 .then(res => res.json())
-.then(data => {
-  console.log(data)
+.then(lights => lights.forEach(light => renderedObject(light)))
+console.log("before fetch returns")
 
-})
 }
 function initialize(){
-//lightData.array.forEach(light => renderedObject(light))
- }
+
+getAllLights()
+console.log('after get all lights')
+
+}
+
 initialize()
 
-
-
- 
  
 //Add Event Listener to Email Button and send alert message Your Message Is Sent
 const input = document.querySelector('input');
