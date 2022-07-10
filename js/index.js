@@ -17,24 +17,32 @@ function myNav() {
     }
   }
   
-function showAllLights(data){
- 
-  fetch('http://localhost:3000/lights')
-  .then(res => res.json())
-  .then(data => {
-    console.log(data)
-   
+function renderedObject(light){
+//Build Gallery of Lights
+let gallery = document.createElement('item')
+gallery.className = 'grid-item'
+gallery.innerHTML = 
+`<img src=${light.imageUrl} width="300" height="400"/>
+<div class="content">
+<h4>${light.name}</h4>
+</div>`
+//Add Gallery to the DOM
+document.querySelector('#light-list').appendChild(gallery)
+fetch('http://localhost:3000/lights')
+.then(res => res.json())
+.then(data => {
+  console.log(data)
 
-  })
-  data.forEach(obj => {
-    const renderedObj = `
-      <div class="grid-item">
-        <img src=${obj.image} width="300" height="400" />
-      </div>
-    `
-  })
- 
+})
 }
+function initialize(){
+//lightData.array.forEach(light => renderedObject(light))
+ }
+initialize()
+
+
+
+ 
  
 //Add Event Listener to Email Button and send alert message Your Message Is Sent
 const input = document.querySelector('input');
