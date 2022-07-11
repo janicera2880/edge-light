@@ -15,102 +15,39 @@
     text-align: center;
 }
  
-/*navigation menu */
-.navbar {
-    overflow: hidden;
+
+  .grid-container {
+ 
     display: grid;
-    text-align: center;
-    grid-template-columns: auto;
-    position: relative;
-    background-color: #333;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
-  }
-  
-  .navbar a {
-    float:none;
-    display: grid;
-    grid-template-columns: auto;
-    align-items: center;
-    font-size: 16px;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  .dropdown {
-    float: none;
-    overflow: hidden;
-  }
-  
-  .dropdown .dropbtn {
-    cursor: pointer;
-    font-size: 16px;  
-    border:cadetblue;
-    outline: none;
-    color: white;
-    padding: 20px 26px;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
-  }
-  
-  .navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
-    background-color: rgb(150, 194, 161);
-  }
-  
-  .dropdown-content {
-    display:none;
-  
-    background-color: rgb(150, 194, 161);
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  .dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
+    grid-template-columns: auto auto auto;
+    background-color: rgb(54, 54, 53);
+    grid-column-gap: 30px;
     
+    grid-row-gap: 0px;
+    padding:5px;
+    column-gap: 1rem;
+    row-gap: 1rem;
   }
-  
-  .dropdown-content a:hover {
-    background-color: rgb(120, 192, 111);
-  }
-  
-  
-/* Gallery grid */ 
 
-.grid-container { 
-
-  display: grid; 
-  grid-template-columns:auto auto auto; 
-  background-color: rgb(34, 33, 33); 
-  grid-column-gap: 30px; 
-  grid-row-gap: 30px; 
-  padding: 5px; 
-
-} 
-/* Gallery Design */ 
-
-.grid-item { 
-
-  display: grid; 
-  background-color: rgba(168, 164, 164, 0.8); 
-  border: 1px solid black; 
-  padding: 30px; 
-  font-size: 30px; 
-  text-align: center; 
-
-} 
-
+.grid-item {
+  background-color: rgb(50, 54, 50);
+  display: grid;
+  grid-template-columns: auto auto auto;
+  border: 1px solid black;
+  column-count: 3;
+  padding: 30px;
+  font-size: 20px;
+ 
+  row-gap: 1rem;
+  column-gap: 1rem;
+ 
+}
 
 /* Style for footer section */
 .footer {
+  position: absolute;
+  bottom: 0%;
+  width: 100%;
   background-color:rgb(50, 54, 50);
   color: rgb(223, 235, 233);
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif

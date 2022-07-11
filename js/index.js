@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
   
 })
 //  Create a function for dropdown menu using get elements by ID
-function myNav() {
+/*function myNav() {
     document.getElementById("myDropdown").classList.toggle("show");
     
   }
@@ -17,9 +17,10 @@ function myNav() {
       }
     }
   }
- 
+ */
+
 function renderedObject(light){
-//Build Gallery of Lights
+//Fetch URL and Build Gallery of Lights
 let gallery = document.createElement('li')
 gallery.className = 'grid-item'
 gallery.innerHTML = 
