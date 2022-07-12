@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
 })
 //Create a function for dropdown menu using get elements by ID
 function myList() {
-    document.getElementById("btnlist").classList.toggle("show");
+    document.getElementById("btnlist").classList.toggle("dropbtn");
     
   }
 
@@ -12,8 +12,8 @@ function myList() {
   document.onclick = function(e) {
     if (!e.target.matches('.btnlist')) {
     let myDropdown = document.getElementById("content");
-      if (myDropdown.classList.contains('dropdown-content')) {
-        myDropdown.classList.remove('dropdown-content');
+      if (myDropdown.classList.contains('dropbtn')) {
+        myDropdown.classList.remove('dropbtn');
       }
     }
   }
@@ -27,7 +27,6 @@ gallery.innerHTML =
 `<img src=${light.image} width="300" height="400"/>
 <div class="content">
 <h4>${light.name}</h4>
-<h5>${light.category}<h5/>
 </div>`
 
 //Add Gallery to the DOM
@@ -49,6 +48,8 @@ console.log('after get all lights')
 }
 
 initialize()
+
+//add like button
 
 
 

@@ -2,10 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Smooch&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&family=Smooch&family=Tiro+Telugu&display=swap');
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
- 
+ *
+ .body {
+  background-color: rgb(142, 151, 148);
+  background-repeat: no-repeat;
+ }
 /*header section */
 .header {
-    background-color: rgb(50, 54, 50);
+    background-color: rgb(101, 119, 101);
     color: rgb(223, 235, 233);
 
     padding: 15px;
@@ -14,7 +18,7 @@
  
 .navbar {
   overflow: hidden;
-  background-color: #333;
+  background-color: rgb(101, 119, 101);
 }
 
 .navbar a {
@@ -50,7 +54,7 @@
  
     display: grid;
     grid-template-columns: auto auto auto;
-    background-color: rgb(54, 54, 53);
+    background-color: rgb(48, 53, 47);
     grid-column-gap: 30px;
     
     grid-row-gap: 0px;
@@ -60,7 +64,7 @@
   }
 
 .grid-item {
-  background-color: rgb(50, 54, 50);
+  background-color: rgb(142, 163, 142);
   display: grid;
   grid-template-columns: auto auto auto;
   border: 1px solid black;
