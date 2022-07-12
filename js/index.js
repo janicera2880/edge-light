@@ -1,23 +1,23 @@
 document.addEventListener('DOMContentLoaded', () => {
     console.log('DOM fully loaded and parsed')
-  
+ 
 })
-//  Create a function for dropdown menu using get elements by ID
-/*function myNav() {
-    document.getElementById("myDropdown").classList.toggle("show");
+//Create a function for dropdown menu using get elements by ID
+function myList() {
+    document.getElementById("btnlist").classList.toggle("show");
     
   }
 
   // Close the dropdown if the user clicks outside of it
   document.onclick = function(e) {
-    if (!e.target.matches('.dropbtn')) {
-    let myDropdown = document.getElementById("myDropdown");
-      if (myDropdown.classList.contains('show')) {
-        myDropdown.classList.remove('show');
+    if (!e.target.matches('.btnlist')) {
+    let myDropdown = document.getElementById("content");
+      if (myDropdown.classList.contains('dropdown-content')) {
+        myDropdown.classList.remove('dropdown-content');
       }
     }
   }
- */
+ 
 
 function renderedObject(light){
 //Fetch URL and Build Gallery of Lights
