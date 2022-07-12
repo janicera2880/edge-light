@@ -22,11 +22,12 @@ document.addEventListener('DOMContentLoaded', () => {
 function renderedObject(light){
 //Fetch URL and Build Gallery of Lights
 let gallery = document.createElement('li')
-gallery.className = 'grid-item'
+gallery.className ='grid-item'
 gallery.innerHTML = 
 `<img src=${light.image} width="300" height="400"/>
 <div class="content">
-<h5>${light.name}</h5>
+<h4>${light.name}</h4>
+<h5>${light.category}<h5/>
 </div>`
 
 //Add Gallery to the DOM
