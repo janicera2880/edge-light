@@ -49,18 +49,8 @@ console.log('after get all lights')
 
 initialize()
 
-//add like button
 
 
 
  
-//Add Event Listener to Email Button and send alert message Your Message Is Sent
-const input = document.querySelector('input');
-const log = document.getElementById('log');
-
-input.addEventListener('change', updateValue);
-
-function updateValue(e) {
-  log.textContent = e.target.value;
-}
 
