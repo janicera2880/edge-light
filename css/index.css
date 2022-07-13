@@ -52,6 +52,7 @@
   background-color: rgb(48, 58, 48);
 }
 
+
   .grid-container {
  
     display: grid;
@@ -77,6 +78,9 @@
   row-gap: 1rem;
   column-gap: 1rem;
  
+}
+.details {
+  display: none;
 }
 .dropdown-content {
   display: none;

@@ -27,8 +27,23 @@ gallery.innerHTML =
 `<img src=${light.image} width="300" height="400"/>
 <div class="content">
 <h4>${light.name}</h4>
+</div>
+<div class="description" id="details">
+<p>${light.style}</p>
+  <p>${light.color}</p>
+  <p>${light.shape}</p>
+  <p>${light.material}</p>
 </div>`
 
+// Mouseover/Mouseleave Eventlistener
+//let details = document.getElementById('details');
+//details.addEventListener('mouseover', function (event){
+//  event.target.style.color = "orange";
+//})
+
+//etails.addEventListener('mouseover', function() {
+  //this.target.style.color = "orange";
+//})
 //Add Gallery to the DOM
 document.querySelector('#light-list').appendChild(gallery)
 }
