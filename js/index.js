@@ -35,18 +35,17 @@ gallery.innerHTML =
   <p>${light.material}</p>
 </div>`
 
-// Mouseover/Mouseleave Eventlistener
-//let details = document.getElementById('details');
-//details.addEventListener('mouseover', function (event){
-//  event.target.style.color = "orange";
-//})
 
-//etails.addEventListener('mouseover', function() {
-  //this.target.style.color = "orange";
-//})
 //Add Gallery to the DOM
 document.querySelector('#light-list').appendChild(gallery)
+document.querySelector("#details").
+
+
 }
+
+
+//Add Eventlistener mouseover/mouseleave
+
 //Fetch Request- Get Fetch for All Lights
 function getAllLights(){
 fetch('http://localhost:3000/lights')

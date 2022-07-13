@@ -79,8 +79,13 @@
   column-gap: 1rem;
  
 }
-.details {
+.description {
+
   display: none;
+ 
+}
+.details {
+  display: block;
 }
 .dropdown-content {
   display: none;
