@@ -10,10 +10,10 @@ function myList() {
 
   // Close the dropdown if the user clicks outside of it
   document.onclick = function(e) {
-    if (!e.target.matches('.btnlist')) {
-    let myDropdown = document.getElementById("content");
-      if (myDropdown.classList.contains('dropbtn')) {
-        myDropdown.classList.remove('dropbtn');
+    if (!e.target.matches('.dropbtn')) {
+    let myDropdown = document.getElementById("#btnlist");
+      if (myDropdown.classList.contains('dropdown')) {
+        myDropdown.classList.remove('dropdown');
       }
     }
   }
@@ -38,22 +38,31 @@ gallery.innerHTML =
 
 //Add Gallery to the DOM
 document.querySelector('#light-list').appendChild(gallery)
-document.querySelector("#details").
+//document.querySelector('#details').appendChild(gallery)
+//details.addEventListener("mouseover", event => {
+ //  console.log("mouse in")
+//});
+//details.addEventListener("mouseleave,", event =>{
+ // console.log("mouse out")
+//} );
+
 
 
 }
 
-
-//Add Eventlistener mouseover/mouseleave
 
 //Fetch Request- Get Fetch for All Lights
 function getAllLights(){
 fetch('http://localhost:3000/lights')
 .then(res => res.json())
 .then(lights => lights.forEach(light => renderedObject(light)))
-console.log('BEFORE RENDER')
+ // console.log(lights)
+  //console.log(lights.map(element => element.id))//
+ 
 
 }
+
+
 function initialize(){
 
 getAllLights()
