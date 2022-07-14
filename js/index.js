@@ -35,7 +35,6 @@ gallery.innerHTML =
   <p>${light.material}</p>
 </div>`
 
-
 //Add Gallery to the DOM
 document.querySelector('#light-list').appendChild(gallery)
 //document.querySelector('#details').appendChild(gallery)
@@ -43,13 +42,10 @@ document.querySelector('#light-list').appendChild(gallery)
  //  console.log("mouse in")
 //});
 //details.addEventListener("mouseleave,", event =>{
- // console.log("mouse out")
+ // console.log("mouse leave")
 //} );
 
-
-
 }
-
 
 //Fetch Request- Get Fetch for All Lights
 function getAllLights(){
@@ -59,9 +55,7 @@ fetch('http://localhost:3000/lights')
  // console.log(lights)
   //console.log(lights.map(element => element.id))//
  
-
 }
-
 
 function initialize(){
 
@@ -71,6 +65,13 @@ console.log('after get all lights')
 }
 
 initialize()
+// Create Elements for footer and create submit event
+let input = document.createElement('input')
+input.type = "text"
+input.name = "name"
+
+
+
 
 
 
