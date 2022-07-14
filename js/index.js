@@ -66,9 +66,59 @@ console.log('after get all lights')
 
 initialize()
 // Create Elements for footer and create submit event
-let input = document.createElement('input')
-input.type = "text"
-input.name = "name"
+function queryForm()
+{
+    //let queryBox = document.getElementById("queryBox").style.display = "block";
+    let queryForm = document.getElementById("queryForm");
+    let linebreak = document.createElement("br");
+
+    let lblName = document.createElement("label");
+    lblName.textContent = "Name: ";
+    queryForm.appendChild(lblName);
+
+    let fullName = document.createElement("input");
+    fullName.name = "fullName";
+    fullName.type = "text";
+    fullName.required = "required";
+    queryForm.appendChild(fullName);
+    queryForm.appendChild(linebreak);
+
+
+    let lblEmail = document.createElement("label");
+    lblEmail.textContent = "Email: ";
+    queryForm.appendChild(linebreak);
+    queryForm.appendChild(lblEmail);
+
+    let email = document.createElement("input");
+    email.name = "email";
+    email.type = "text";
+    email.required = "required";
+    queryForm.appendChild(email);
+
+
+    let lblPhoneNumber = document.createElement("label");
+    lblPhoneNumber.textContent = "Phone Number: ";
+    queryForm.appendChild(linebreak);
+    queryForm.appendChild(lblPhoneNumber);
+
+    let phoneNumber = document.createElement("input");
+    phoneNumber.name = "phoneNumber";
+    phoneNumber.type = "text";
+    phoneNumber.required = "required";
+    queryForm.appendChild(phoneNumber);
+
+
+    let submitQuery = document.createElement("input");
+    submitQuery.type = "submit";
+    submitQuery.value = "Submit Query";
+    queryForm.appendChild(linebreak);
+    queryForm.appendChild(submitQuery);
+
+    let resetForm = document.createElement("input");
+    resetForm.type = "reset";
+    resetForm.value = "Reset";
+    queryForm.appendChild(resetForm);
+}
 
 
 

@@ -5,9 +5,9 @@
  *
  .body {
   background-color: rgb(142, 151, 148);
-  background-repeat: no-repeat;
-  position: relative;
-  display: block;
+ 
+  
+ 
  }
 /*header section */
 .header {
@@ -116,7 +116,7 @@
 }
 
 /* Style for footer section */
-.footer {
+.queryForm {
   position: absolute;
   bottom: 0%;
   width: 100%;
