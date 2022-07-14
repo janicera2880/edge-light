@@ -43,10 +43,11 @@
 
    <!-- footer Section- suscribe and submit email -->
    <footer>
-    <form><label>Name: </label><input required="" name="fullName" type="text"><label>Email: </label>  
+    <form action="mailto:someone@example.com" method="post" enctype="text/plain"><label>Name: </label><input required="" name="fullName" type="text"><label>Email: </label>  
     <input required="" name="email" type="text"><label>Phone Number: </label>
     <input required="" name="phoneNumber" type="text"><br>
-    <input value="Submit Query" type="submit"></form>
+    <input value="Submit Query" type="submit" id="myFormId">
+    <input type="reset" value="Reset"></form>
    </footer>
 
   

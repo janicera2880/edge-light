@@ -28,7 +28,7 @@ gallery.innerHTML =
 <div class="content">
 <h4>${light.name}</h4>
 </div>
-<div class="description" id="details">
+<div class="description">
 <p>${light.style}</p>
   <p>${light.color}</p>
   <p>${light.shape}</p>
@@ -37,13 +37,19 @@ gallery.innerHTML =
 
 //Add Gallery to the DOM
 document.querySelector('#light-list').appendChild(gallery)
-//document.querySelector('#details').appendChild(gallery)
-//details.addEventListener("mouseover", event => {
- //  console.log("mouse in")
-//});
-//details.addEventListener("mouseleave,", event =>{
- // console.log("mouse leave")
-//} );
+
+gallery.addEventListener("mouseover", event => {
+ //console.log("mouse in")
+ const descriptionDiv = gallery.querySelector(".description")
+ //descriptionDiv.style.display = "block";
+ descriptionDiv.classList.add("displayed")
+});
+gallery.addEventListener("mouseleave", event => {
+  //console.log("mouse in")
+  const descriptionDiv = gallery.querySelector(".description")
+  //descriptionDiv.style.display = "none";
+  descriptionDiv.classList.remove("displayed")
+ });
 
 }
 
@@ -68,7 +74,7 @@ initialize()
 // Create Elements for footer and create submit event
 function queryForm()
 {
-    //let queryBox = document.getElementById("queryBox").style.display = "block";
+    let queryBox = document.getElementById("queryBox").style.display = "block";
     let queryForm = document.getElementById("queryForm");
     let linebreak = document.createElement("br");
 
@@ -118,8 +124,14 @@ function queryForm()
     resetForm.type = "reset";
     resetForm.value = "Reset";
     queryForm.appendChild(resetForm);
-}
 
+    document.getElementById("#myFormId").addEventListener("submit", function(e){
+      if(!isValid){
+          e.preventDefault();    
+      }
+      
+    });
+}
 
 
 

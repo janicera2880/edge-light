@@ -5,6 +5,7 @@
  *
  .body {
   background-color: rgb(142, 151, 148);
+  display:contents;
  
   
  
@@ -58,7 +59,7 @@
     display: grid;
     grid-template-columns: auto auto auto;
     background-color: rgb(48, 53, 47);
-    grid-column-gap: 30px;
+    grid-column-gap: 10px;
     
     grid-row-gap: 0px;
     padding:5px;
@@ -82,9 +83,10 @@
 .description {
 
   display: none;
+
  
 }
-.details {
+.displayed {
   display: block;
 }
 .dropdown-content {
@@ -116,12 +118,13 @@
 }
 
 /* Style for footer section */
-.queryForm {
+.footer {
   position: absolute;
-  bottom: 0%;
+  bottom: 10%;
   width: 100%;
   background-color:rgb(41, 46, 41);
   color: rgb(223, 235, 233);
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
   
 }
