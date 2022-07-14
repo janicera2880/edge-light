@@ -41,13 +41,13 @@ document.querySelector('#light-list').appendChild(gallery)
 gallery.addEventListener("mouseover", event => {
  //console.log("mouse in")
  const descriptionDiv = gallery.querySelector(".description")
- //descriptionDiv.style.display = "block";
+ 
  descriptionDiv.classList.add("displayed")
 });
 gallery.addEventListener("mouseleave", event => {
-  //console.log("mouse in")
+  //console.log("mouse leave")
   const descriptionDiv = gallery.querySelector(".description")
-  //descriptionDiv.style.display = "none";
+  
   descriptionDiv.classList.remove("displayed")
  });
 
