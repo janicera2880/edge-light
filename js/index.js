@@ -1,3 +1,5 @@
+//
+
 document.addEventListener('DOMContentLoaded', () => {
     console.log('DOM fully loaded and parsed')
  
@@ -26,26 +28,31 @@ gallery.className ='grid-item'
 gallery.innerHTML = 
 `<img src=${light.image} width="300" height="400"/>
 <div class="content">
-<h4>${light.name}</h4>
+<h5>${light.name}</h5>
 </div>
 <div class="description">
-<p>${light.style}</p>
+  <p>Description:</p>
+  <p>${light.category}</p>  
+  <p>${light.style}</p>
   <p>${light.color}</p>
   <p>${light.shape}</p>
+  <p>${light.size}</p>
   <p>${light.material}</p>
+  <p>${light.voltage}</p>
+
 </div>`
 
 //Add Gallery to the DOM
 document.querySelector('#light-list').appendChild(gallery)
 
 gallery.addEventListener("mouseover", event => {
- //console.log("mouse in")
+ console.log("mouse in")
  const descriptionDiv = gallery.querySelector(".description")
  
  descriptionDiv.classList.add("displayed")
 });
 gallery.addEventListener("mouseleave", event => {
-  //console.log("mouse leave")
+  console.log("mouse leave")
   const descriptionDiv = gallery.querySelector(".description")
   
   descriptionDiv.classList.remove("displayed")
@@ -58,9 +65,7 @@ function getAllLights(){
 fetch('http://localhost:3000/lights')
 .then(res => res.json())
 .then(lights => lights.forEach(light => renderedObject(light)))
- // console.log(lights)
-  //console.log(lights.map(element => element.id))//
- 
+ console.log("Before DOM loads")
 }
 
 function initialize(){
@@ -69,9 +74,9 @@ getAllLights()
 console.log('after get all lights')
 
 }
-
 initialize()
 // Create Elements for footer and create submit event
+
 function queryForm()
 {
     let queryBox = document.getElementById("queryBox").style.display = "block";
@@ -131,7 +136,8 @@ function queryForm()
       }
       
     });
-}
+  }
+
 
 
 
