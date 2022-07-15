@@ -5,20 +5,20 @@ document.addEventListener('DOMContentLoaded', () => {
  
 })
 //Create a function for dropdown menu using get elements by ID
-function myList() {
-    document.getElementById("btnlist").classList.toggle("dropbtn");
+function myNav() {
+    document.getElementById(".myList").classList.toggle("show");
     
   }
 
   // Close the dropdown if the user clicks outside of it
-  document.onclick = function(e) {
-    if (!e.target.matches('.dropbtn')) {
-    let myDropdown = document.getElementById("#btnlist");
-      if (myDropdown.classList.contains('dropdown')) {
-        myDropdown.classList.remove('dropdown');
-      }
-    }
-  }
+  //document.getElementById("#btnlist") = function(e) {
+   // if (!e.target.matches('.dropbtn')) {
+   // let myList = document.getElementById("#btnlist");
+     // if (myList.classList.contains('show')) {
+     //   myList.classList.remove('show');
+     // }
+    //}
+ // }
  
 
 function renderedObject(light){
