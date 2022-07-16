@@ -90,8 +90,10 @@
 .description {
 
   display: none;
-  font-size: small;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: medium;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: rgb(25, 26, 24);
+  color: #ddd;
 
  
 }
