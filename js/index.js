@@ -4,22 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log('DOM fully loaded and parsed')
  
 })
-//Create a function for dropdown menu using get elements by ID
-function myNav() {
-    document.getElementById(".myList").classList.toggle("show");
-    
-  }
 
-  // Close the dropdown if the user clicks outside of it
-  //document.getElementById("#btnlist") = function(e) {
-   // if (!e.target.matches('.dropbtn')) {
-   // let myList = document.getElementById("#btnlist");
-     // if (myList.classList.contains('show')) {
-     //   myList.classList.remove('show');
-     // }
-    //}
- // }
- 
 
 function renderedObject(light){
 //Fetch URL and Build Gallery of Lights
@@ -32,7 +17,7 @@ gallery.innerHTML =
 
 </div>
 <div class="description">
-  <h5>${light.name}</h5>
+  
   <p>Description:</p>
   <p>${light.category}</p>  
   <p>${light.style}</p>
@@ -48,13 +33,13 @@ gallery.innerHTML =
 document.querySelector('#light-list').appendChild(gallery)
 
 gallery.addEventListener("mouseover", event => {
- console.log("mouse in")
+ //console.log("mouse in")
  const descriptionDiv = gallery.querySelector(".description")
  
  descriptionDiv.classList.add("displayed")
 });
 gallery.addEventListener("mouseleave", event => {
-  console.log("mouse leave")
+  //console.log("mouse leave")
   const descriptionDiv = gallery.querySelector(".description")
   
   descriptionDiv.classList.remove("displayed")
