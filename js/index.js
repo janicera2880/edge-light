@@ -69,8 +69,9 @@ for (let clickButton of
   document.getElementsByClassName("clickbutton"))
   clickButton.addEventListener("click", alertMessage);
   function alertMessage() {
-     alert("Your Email Was Successfully Sent, We'll Get Back With You Shortly!");
-  }
+alert("Your Email Was Successfully Sent, We'll Get Back With You Shortly!");
+e.preventDefault()
+}
 
 
 
