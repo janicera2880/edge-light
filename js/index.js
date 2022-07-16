@@ -62,10 +62,15 @@ console.log('after get all lights')
 
 }
 initialize()
-// Create Elements for footer and create submit event
 
 
-
+//Click Button Alert Event Listener Added To Send Button
+for (let clickButton of
+  document.getElementsByClassName("clickbutton"))
+  clickButton.addEventListener("click", alertMessage);
+  function alertMessage() {
+     alert("Your Email Was Successfully Sent, We'll Get Back With You Shortly!");
+  }
 
 
 
