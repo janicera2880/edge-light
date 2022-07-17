@@ -1,5 +1,3 @@
-//
-
 document.addEventListener('DOMContentLoaded', () => {
     console.log('DOM fully loaded and parsed')
  
@@ -72,6 +70,7 @@ for (let clickButton of
 alert("Your Email Was Successfully Sent, We'll Get Back With You Shortly!");
 e.preventDefault()
 }
+
 
 
 
