@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log(event.target['mySearch'].value)
     p = document.createElement('p');
     button = document.createElement('button')
-    button.textContent = 'x'
+    button.textContent = ' x '
     button.addEventListener('click', function(){
       this.parentNode.remove()
     })
