@@ -1,7 +1,20 @@
 document.addEventListener('DOMContentLoaded', () => {
-    console.log('DOM fully loaded and parsed')
- 
-})
+  let form = document.getElementById('product-form')
+  form.addEventListener('submit', function(event){
+    event.preventDefault()
+    console.log(event.target['mySearch'].value)
+    p = document.createElement('p');
+    button = document.createElement('button')
+    button.textContent = 'x'
+    button.addEventListener('click', function(){
+      this.parentNode.remove()
+    })
+    p.textContent = `${event.target['mySearch'].value} `
+    console.log(p)
+    form.appendChild(p)
+    p.appendChild(button)
+  })
+});
 
 
 function renderedObject(light){
@@ -29,7 +42,7 @@ gallery.innerHTML =
 
 //Add Gallery to the DOM
 document.querySelector('#light-list').appendChild(gallery)
-
+// Create Mouseover Event and Mouseleave
 gallery.addEventListener("mouseover", event => {
  //console.log("mouse in")
  const descriptionDiv = gallery.querySelector(".description")
