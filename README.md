@@ -18,6 +18,8 @@ ___
 
 [Contributing](#contributing) 
 
+[Credits And References](#credit)
+
 [License](#license) 
 
 ___ 
@@ -47,6 +49,9 @@ Now, to open the default file to your browser do the following command:
 
 The web application will then take you to the website where you can browse our unique and custom-made lighting fixtures.  You can either add them to your favorite list or add them to your cart.  Otherwise, stay up to date by subscribing to our latest events by simply providing us with your email address.
 
+## Credit And References
+
+I use most of my lighting fixtures gallery pictures from Catalog Website https://www.litfad.com/ and their descriptions.
 
 
 ## Contributing 
