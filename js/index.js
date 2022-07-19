@@ -1,4 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
+  //The DOMContentLoaded event is fired when the initial HTML document has been completely loaded and parsed, without waiting for stylesheets, images, and subframes to finish loading.
+  //Declare variable form by ID product-form
   let form = document.getElementById('product-form')
   form.addEventListener('submit', function(event){
     event.preventDefault()
@@ -63,7 +65,7 @@ function getAllLights(){
 fetch('http://localhost:3000/lights')
 .then(res => res.json())
 .then(lights => lights.forEach(light => renderedObject(light)))
- console.log("Before DOM loads")
+ console.log("Before DOM loads") 
 }
 
 function initialize(){
@@ -75,7 +77,10 @@ console.log('after get all lights')
 initialize()
 
 
-//Click Button Alert Event Listener Added To Send Button
+//Click Button Alert Event Listener--- I use a callback function.
+//It takes 2 parameters. The first one is its type, “click”, and the second parameter is a callback function, which logs the message when the button is clicked.
+//The preventDefault() method cancels the event if it is cancelable, meaning that the default action that belongs to the event will not occur.
+//Clicking submit button will prevent it fropm submitting a form
 for (let clickButton of
   document.getElementsByClassName("clickbutton"))
   clickButton.addEventListener("click", alertMessage);

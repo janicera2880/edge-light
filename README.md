@@ -51,8 +51,8 @@ The web application will then take you to the website where you can browse our u
 
 ## Credit And References
 
-I use most of my lighting fixtures gallery pictures from Catalog Website https://www.litfad.com/ and their descriptions.
-
+* I use most of my gallery pictures and descriptions from Catalog Website https://www.litfad.com/.
+* Css template and design from https://www.geeksforgeeks.org/ and https://codepen.io/.
 
 ## Contributing 
 
