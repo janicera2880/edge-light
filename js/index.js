@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
   })
 });
 
-
+//
 function renderedObject(light){
 //Fetch URL and Build Gallery of Lights
 let gallery = document.createElement('li')
@@ -64,14 +64,21 @@ gallery.addEventListener("mouseleave", event => {
 function getAllLights(){
 fetch('http://localhost:3000/lights')
 .then(res => res.json())
-.then(lights => lights.forEach(light => renderedObject(light)))
- console.log("Before DOM loads") 
+.then(lights => lights.forEach(light => console.log(light)))
+//.then(lights => console.log(lights))
+//my second .then gives me my entire data array which is "lights". Next, for each light object in my array I'm passing each one to my renderObject function
+//.then in a GET request will always give you your entire data object
+//.then(lights => lights.forEach(light => renderedObject(light)))
+//gallery.array.forEach(element => console.log(light));
+  
+
+console.log() 
 }
 
 function initialize(){
-
+//lightData.array.forEach(light => renderedObject(light))
 getAllLights()
-console.log('after get all lights')
+console.log('after get all light')
 
 }
 initialize()
