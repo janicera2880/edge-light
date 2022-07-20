@@ -2,7 +2,9 @@ document.addEventListener('DOMContentLoaded', () => {
   console.log('The DOM has loaded');
   
   //Subscribe to Newsletter
-  //declare variable form and add eventlistener
+  //declare variable form and add eventlistener submit
+  //add event listener click to button and add text content and when clicked will be removed
+  //event prevent default so the submit form will not actually submit
   let form = document.getElementById('subscribe-form')
   form.addEventListener('submit', function(event){
     event.preventDefault()
@@ -24,9 +26,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
 });
 
-//I wanted to build a gallery of products in grid view to my main page light fixture catalog
+//Build Gallery of Lighting Fixtures
+//create rederedObject function and pass parameter of light
+
 function renderedObject(light){
-//Fetch URL and Build Gallery of Lights
 let gallery = document.createElement('li')
 gallery.className ='grid-item'
 gallery.innerHTML = 
@@ -45,6 +48,7 @@ gallery.innerHTML =
   <p>${light.voltage}</p>
  
 </div>`
+//Add galllery of lights to the DOM
 document.querySelector('#light-list').appendChild(gallery)
 
 
@@ -57,6 +61,7 @@ setTimeout(() => {
   button.innerText = 'Favorite❤️';
   }, 1000);
 });
+
 
 // Create Mouseover Event and Mouseleave
 gallery.addEventListener("mouseover", event => {
@@ -75,24 +80,23 @@ gallery.addEventListener("mouseleave", event => {
 }
 
 
-//Fetch Request- Get Fetch for All Lights
+//Fetch Request to the server- Get Fetch for All Lights
 function getAllLights() {
 fetch('http://localhost:3000/lights')
 .then(res => res.json())
-.then(lights => lights.forEach(light => renderedObject(light)))
-
-//.then(lights => lights.forEach(light => console.log(light)))
 //.then(lights => console.log(lights))
+.then(lights => lights.forEach(light => renderedObject(light)))
+ 
+//.then(lights => lights.forEach(light => console.log(light)))
 
-//my second .then gives me my entire data array which is "lights". Next, for each light object in my array I'm passing each one to my renderObject function
-//.then in a GET request will always display entire data object
+
+//my second .then gives a promise response my entire data array which is "lights". 
+//.then in a GET request will display entire data object and for each light object in my array I'm passing each one to my renderObject function
 }
-
+//Initial Render Get data and render lights to DOM--- will contine to load while waiting for Fetch to get data
 function initialize(){
-
 getAllLights()
-
-
+console.log('after get all lights')
 }
 initialize()
 
