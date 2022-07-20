@@ -12,7 +12,7 @@
             "size": "Large",
             "shape": "Geometric",
             "voltage": "110V-120V",
-            "glass_type": {
+            "glass": {
                 "glass_material": "Clear Glass",
                 "glass_color": "Smoke Gray"
             },
