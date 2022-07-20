@@ -1,19 +1,20 @@
 document.addEventListener('DOMContentLoaded', () => {
   console.log('The DOM has loaded');
   
-  //I wanted to create a demo search button where you can just type in any keyword and will remove search words when x is clicked
-  let form = document.getElementById('product-form')
+  //Subscribe to Newsletter
+  //declare variable form and add eventlistener
+  let form = document.getElementById('subscribe-form')
   form.addEventListener('submit', function(event){
     event.preventDefault()
-    console.log(event.target['mySearch'].value)
+    console.log(event.target['mySubscription'].value)
     p = document.createElement('p');
     button = document.createElement('button')
-    button.textContent = ' x '
+    button.textContent = 'You are added to our mailing list!'
     button.addEventListener('click', function(){
     this.parentNode.remove()
     })
 
-    p.textContent = `${event.target['mySearch'].value} `
+    p.textContent = `${event.target['mySubscription'].value} `
     console.log(p)
     form.appendChild(p)
     p.appendChild(button)
@@ -42,8 +43,7 @@ gallery.innerHTML =
   <p>${light.size}</p>
   <p>${light.material}</p>
   <p>${light.voltage}</p>
-  <p>${light.glass.glass_material}</p>
-  <p>${light.glass.glass_color}</p>
+ 
 </div>`
 document.querySelector('#light-list').appendChild(gallery)
 
@@ -51,7 +51,7 @@ document.querySelector('#light-list').appendChild(gallery)
 gallery.addEventListener('click', () => {
   const button = gallery.querySelector('#button');
 
-  button.innerText = 'Added To Favorite❤️';
+  button.innerText = 'Added To Favorites❤️';
   
 setTimeout(() => {
   button.innerText = 'Favorite❤️';
@@ -82,7 +82,6 @@ fetch('http://localhost:3000/lights')
 .then(lights => lights.forEach(light => renderedObject(light)))
 
 //.then(lights => lights.forEach(light => console.log(light)))
-
 //.then(lights => console.log(lights))
 
 //my second .then gives me my entire data array which is "lights". Next, for each light object in my array I'm passing each one to my renderObject function

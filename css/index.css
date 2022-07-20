@@ -67,10 +67,10 @@
   color: #f2f2f2;
   float:right;
   padding: 5px 10px;
-  margin-right: 12px;
+  margin-right: 1px;
   font-size: 15px;
   border: none;
-  cursor:pointer;
+  cursor:auto;
 }
 
 
