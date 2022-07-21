@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
   console.log('The DOM has loaded');
   
-  //Subscribe to Newsletter
-  //declare variable form and add eventlistener submit
+  //Adding Activity to Subscribe Newsletter Bar
+  
   //add event listener click to button and add text content and when clicked will be removed
   //event prevent default so the submit form will not actually submit
   let form = document.getElementById('subscribe-form')
@@ -59,7 +59,7 @@ gallery.addEventListener('click', () => {
   
 setTimeout(() => {
   button.innerText = 'Favorite❤️';
-  }, 1000);
+  }, 3000);
 });
 
 
@@ -90,10 +90,11 @@ fetch('http://localhost:3000/lights')
 //.then(lights => lights.forEach(light => console.log(light)))
 
 
-//my second .then gives a promise response my entire data array which is "lights". 
+//.then gives a promise response to get results my entire data array which is "lights". 
 //.then in a GET request will display entire data object and for each light object in my array I'm passing each one to my renderObject function
 }
-//Initial Render Get data and render lights to DOM--- will contine to load while waiting for Fetch to get data
+
+//Initial Render Get data and render lights to DOM--- will continue to load while waiting for Fetch to get data
 function initialize(){
 getAllLights()
 console.log('after get all lights')
@@ -101,16 +102,15 @@ console.log('after get all lights')
 initialize()
 
 
-//Click Button Alert Event Listener--- I use a callback function.
-//It takes 2 parameters. The first one is its type, “click”, and the second parameter is a callback function, which logs the message when the button is clicked.
-//The preventDefault() method cancels the event if it is cancelable, meaning that the default action that belongs to the event will not occur.
-//Clicking submit button will prevent it fropm submitting a form
 for (let clickButton of
   document.getElementsByClassName("clickButton"))
+  /* Event listener */
   clickButton.addEventListener("click", alertMessage);
   function alertMessage() {
-     alert("Your Email Was Successfully Sent, We'll Get Back With You Shortly!");
-  }
+  alert("Your Email Was Successfully Sent, We'll Get Back With You Shortly!");
+}
+
+
 
 
 
